@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="tr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>DİSA</title>
+        <link rel="stylesheet" href="style.css">
+        <!-- Font Awesome Ikonları (CDN) -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+        <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    </head>
+<body>
+    <header>
+        <nav class="navbar">
+            <!-- Sol: Logo + DİSA Yazısı -->
+            <div class="navbar-left">
+                <img src="images/ay_yıldız.png" alt="DİSA Logo" class="logo-image">
+                <span class="logo-text">DİSA</span>
+            </div>
+            
+            <!-- Orta: Linkler -->
+            <div class="navbar-center">
+                <a href="index.html">Anasayfa</a>
+                <a href="basin_odasi.html">Basın Odası</a>
+                <a href="kurumsal.html">Kurumsal</a>
+                <a href="iletisim.html">İletişim</a>
+                
+            </div>
+            
+            <!-- Sağ: Sidebar Açma Butonu -->
+            <div class="navbar-right">
+                <i class="fas fa-bars sidebar-toggle"></i>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Sidebar -->
+<div class="sidebar">
+    <div class="sidebar-header">
+        <i class="fas fa-times sidebar-close"></i>
+    </div>
+    <div class="sidebar-menu">
+        <a href="index.html"><i class="fas fa-home"></i> Anasayfa</a>
+        <a href="basin_odasi.html"><i class="fas fa-newspaper"></i> Basın Odası</a>
+        <a href="kurumsal.html"><i class="fas fa-building"></i> Kurumsal</a>
+        <a href="iletisim.html"><i class="fas fa-envelope"></i> İletişim</a>
+    </div>
+    <div class="sidebar-social">
+        <a href="https://www.instagram.com/disatoplulugu/"><i class="fab fa-instagram"></i></a>
+        <a href="https://x.com/disatoplulugu?s=21"><i class="fab fa-twitter"></i></a>
+        <a href="https://tr.linkedin.com/in/disa-toplulu%C4%9Fu-a31692362"><i class="fab fa-linkedin"></i></a>
+       
+    </div>
+</div>
+<div class="sidebar-overlay"></div>
+
+
+
+<!-- Slider Section -->
+<section class="slider-container">
+    <div class="slider">
+        <div class="slide active">
+            <img src="images/slider1.jpg" alt="Slider Resim 1">
+        </div>
+        <div class="slide">
+            <img src="images/slider1.jpg" alt="Slider Resim 2">
+        </div>
+        <div class="slide">
+            <img src="images/slider1.jpg" alt="Slider Resim 3">
+        </div>
+    </div>
+    
+    <!-- Slider Dots (Altındaki çizgiler/daireler) -->
+    <div class="slider-dots">
+        <span class="dot active"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+    </div>
+</section>
+
+
+
+<!-- Slider'dan sonraki yazı -->
+<div class="disa-title">
+    <h2>DİSA | Diplomasi ve Siyaset Araştırmaları Topluluğu</h2>
+</div>
+
+
+
+
+<footer class="site-footer">
+    <div class="footer-container">
+        <!-- Telif Hakkı -->
+        <div class="footer-left">
+            <p>DİSA Topluluğu | Tüm Hakları Saklıdır © 2025</p>
+        </div>
+        
+        <!-- Sosyal Medya -->
+        <div class="footer-right">
+            <a href="https://www.instagram.com/disatoplulugu/" class="social-icon"><i class="fab fa-instagram"></i></a>
+            <a href="https://x.com/disatoplulugu?s=21" class="social-icon"><i class="fab fa-twitter"></i></a>
+            <a href="https://tr.linkedin.com/in/disa-toplulu%C4%9Fu-a31692362" class="social-icon"><i class="fab fa-linkedin"></i></a>
+            
+        </div>
+    </div>
+</footer>
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>
