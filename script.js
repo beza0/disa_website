@@ -78,3 +78,21 @@ function openTab(evt, tabName) {
     document.getElementById(tabName).classList.add("active");
     evt.currentTarget.classList.add("active");
 }
+
+
+// Form gönderimini yakala
+document.querySelector('form')?.addEventListener('submit', async (e) => {
+    e.preventDefault();
+    const form = e.target;
+    const response = await fetch(form.action, {
+        method: 'POST',
+        body: new FormData(form),
+        headers: { 'Accept': 'application/json' }
+    });
+    
+    if (response.ok) {
+        form.style.display = 'none';
+        document.querySelector('.form-success').style.display = 'block';
+        form.reset();
+    }
+});
