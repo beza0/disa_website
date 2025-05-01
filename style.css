@@ -123,6 +123,14 @@
         font-size: 1.1rem;
     }
 }
+@media (max-width: 768px) {
+    .navbar-center {
+        display: none; /* Mobilde menüyü gizle */
+    }
+    .navbar-right {
+        display: block; /* Hamburger ikonunu göster */
+    }
+}
 
 @media (max-width: 768px) {
     .navbar {
@@ -430,7 +438,7 @@
     background: white;
     border-radius: 8px;
     padding: 25px;
-    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+    box-shadow: 0 25px 50px rgba(0,0,0,0.1);
     transition: transform 0.3s;
 }
 
@@ -443,13 +451,43 @@
     border-left: 4px solid var(--gold);
     padding-left: 15px;
     margin-bottom: 15px;
+    position: relative;
+    padding-bottom: 15px;
+}
+.content-card h2::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 20px;
+    width: 60px;
+    height: 3px;
+    background-color: var(--gold);
+}
+.content-card p {
+   font-family: 'Times New Roman', Times, serif;
+font-size: 1.15rem;
+     text-rendering: optimizeLegibility;
+    margin-bottom: 20px;
+}
+
+.content-card p:last-child {
+    margin-bottom: 0;
 }
 
 .content-card h2 i {
     margin-right: 10px;
     color: var(--gold);
 }
-
+@media (max-width: 768px) {
+    .content-card {
+        padding: 25px 20px;
+        font-size: 1rem;
+    }
+    
+    .content-card h2 {
+        font-size: 1.3rem;
+    }
+}
 /* ORGANİZASYON ŞEMASI STİLLERİ */
 .org-chart {
     margin: 60px auto;
